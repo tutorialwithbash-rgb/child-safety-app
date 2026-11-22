@@ -36,7 +36,11 @@ function Index() {
     <main className="min-h-screen bg-background text-foreground">
       <header className="mx-auto flex min-h-24 max-w-7xl items-center justify-between gap-4 px-6 lg:px-10">
         <a href="#home" className="flex min-w-0 items-center gap-3" aria-label="Safernet home">
-          <img src="/logo.png" alt="SN logo" className="size-14 shrink-0 rounded-sm object-cover" />
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="SN logo"
+            className="size-14 shrink-0 rounded-sm object-cover"
+          />
           <span className="truncate font-display text-lg font-bold">Safernet</span>
         </a>
         <Button asChild variant="outline" size="sm" className="shrink-0 border-primary/25">
@@ -115,7 +119,7 @@ function Index() {
 
           <div className="hidden items-center justify-center md:flex md:justify-end">
             <img
-              src="/splash-logo.png"
+              src={`${import.meta.env.BASE_URL}splash-logo.png`}
               alt="Safernet logo"
               className="aspect-square w-[min(78vw,460px)] object-contain"
             />
@@ -125,7 +129,11 @@ function Index() {
 
       <footer className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-10">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="" className="size-10 rounded-sm object-cover" />
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt=""
+            className="size-10 rounded-sm object-cover"
+          />
           <span className="font-display font-bold">Safernet</span>
         </div>
         <p className="text-sm text-muted-foreground">For the moments that matter most.</p>

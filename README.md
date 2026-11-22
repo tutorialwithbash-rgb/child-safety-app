@@ -22,3 +22,9 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Deployment
+
+Pushing to `main` builds the statically prerendered landing page and deploys it to GitHub Pages.
+After the first successful workflow run, the site is available at
+<https://tutorialwithbash-rgb.github.io/child-safety-app/>.
