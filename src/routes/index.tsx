@@ -1,27 +1,28 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, FileDown, Smartphone, type LucideIcon } from "lucide-react";
 
-import logoAsset from "@/assets/logo.png.asset.json";
-import splashLogoAsset from "@/assets/splash-logo.png.asset.json";
 import { Button } from "@/components/ui/button";
 
 const downloadOptions: { label: string; href: string; icon: LucideIcon }[] = [
   { label: "APK file", href: "", icon: FileDown },
-  { label: "Main application", href: "", icon: Smartphone },
+  {
+    label: "Browser version",
+    href: "https://drive.google.com/file/d/18R4g_7Wj4aEC7wDZ1d-cz22jNefZfl7M/view?usp=sharing",
+    icon: Smartphone,
+  },
 ];
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "SN Child Safety | Download the App" },
+      { title: "Safernet | Download the App" },
       {
         name: "description",
-        content: "Download SN Child Safety for everyday family safety.",
+        content: "Download Safernet for everyday family safety.",
       },
-      { property: "og:title", content: "SN Child Safety | Download the App" },
+      { property: "og:title", content: "Safernet | Download the App" },
       {
         property: "og:description",
-        content: "Download SN Child Safety for everyday family safety.",
+        content: "Download Safernet for everyday family safety.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -34,17 +35,9 @@ function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <header className="mx-auto flex min-h-24 max-w-7xl items-center justify-between gap-4 px-6 lg:px-10">
-        <a
-          href="#home"
-          className="flex min-w-0 items-center gap-3"
-          aria-label="SN Child Safety home"
-        >
-          <img
-            src={logoAsset.url}
-            alt="SN logo"
-            className="size-14 shrink-0 rounded-sm object-cover"
-          />
-          <span className="truncate font-display text-lg font-bold">SN Child Safety</span>
+        <a href="#home" className="flex min-w-0 items-center gap-3" aria-label="Safernet home">
+          <img src="/logo.png" alt="SN logo" className="size-14 shrink-0 rounded-sm object-cover" />
+          <span className="truncate font-display text-lg font-bold">Safernet</span>
         </a>
         <Button asChild variant="outline" size="sm" className="shrink-0 border-primary/25">
           <a href="#download">Download</a>
@@ -58,17 +51,16 @@ function Index() {
       >
         <div className="mx-auto grid min-h-[min(72vh,760px)] max-w-7xl items-center gap-8 px-6 py-12 md:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-10 lg:py-16">
           <div className="max-w-xl">
-            <p className="text-sm font-bold uppercase text-signal">
-              A little more peace of mind
-            </p>
+            <p className="text-sm font-bold uppercase text-signal">A little more peace of mind</p>
             <h1
               id="page-title"
               className="mt-5 max-w-xl font-display text-5xl leading-[1.04] font-extrabold sm:text-6xl lg:text-7xl"
             >
-              SN Child Safety
+              Safernet
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-8 text-hero-muted">
-              Download our child safety app and keep peace of mind close, wherever the day takes you.
+              Download our child safety app and keep peace of mind close, wherever the day takes
+              you.
             </p>
 
             <div id="download" className="mt-9 flex flex-wrap gap-3">
@@ -117,14 +109,14 @@ function Index() {
               })}
             </div>
             <p className="mt-5 text-sm text-hero-muted">
-              Google Drive download links will appear here.
+              The APK download link is coming soon. Use the browser version above in the meantime.
             </p>
           </div>
 
           <div className="hidden items-center justify-center md:flex md:justify-end">
             <img
-              src={splashLogoAsset.url}
-              alt="SN Child Safety logo"
+              src="/splash-logo.png"
+              alt="Safernet logo"
               className="aspect-square w-[min(78vw,460px)] object-contain"
             />
           </div>
@@ -133,8 +125,8 @@ function Index() {
 
       <footer className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-10">
         <div className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="" className="size-10 rounded-sm object-cover" />
-          <span className="font-display font-bold">SN Child Safety</span>
+          <img src="/logo.png" alt="" className="size-10 rounded-sm object-cover" />
+          <span className="font-display font-bold">Safernet</span>
         </div>
         <p className="text-sm text-muted-foreground">For the moments that matter most.</p>
       </footer>
