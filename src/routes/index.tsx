@@ -4,7 +4,11 @@ import { ArrowUpRight, FileDown, Smartphone, type LucideIcon } from "lucide-reac
 import { Button } from "@/components/ui/button";
 
 const downloadOptions: { label: string; href: string; icon: LucideIcon }[] = [
-  { label: "APK file", href: "https://drive.google.com/file/d/1YO5j4anx6C8r_biQOVgWRZnNHd7zGgcp/view?usp=sharing", icon: FileDown },
+  {
+    label: "APK file",
+    href: "https://drive.google.com/file/d/1Qz91Dh-I2WKEWNkEFUzR60QQKp_5oc_w/view?usp=sharing",
+    icon: FileDown,
+  },
   {
     label: "Browser version",
     href: "https://drive.google.com/file/d/18R4g_7Wj4aEC7wDZ1d-cz22jNefZfl7M/view?usp=sharing",
