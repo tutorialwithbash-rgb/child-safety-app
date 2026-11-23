@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const downloadOptions: { label: string; href: string; icon: LucideIcon }[] = [
   {
     label: "APK file",
-    href: "https://drive.google.com/file/d/1Qz91Dh-I2WKEWNkEFUzR60QQKp_5oc_w/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1Kd3ogRAaC6bR1vqaLD1esXZJ1bPsS_y6/view?usp=sharing",
     icon: FileDown,
   },
   {
